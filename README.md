@@ -1,7 +1,7 @@
 # Fake Job Posting Detection & Hiring Scam Analytics
 
 ## Project Overview
-This project analyzes fake and real job postings to identify hiring scam patterns using Excel, Power Query, MySQL, Power BI, and Python Machine Learning.
+This project analyzes fake and real job postings to identify hiring scam patterns using Excel, Power Query, MySQL, Power BI, and Python.
 
 ## Tools Used
 - Excel
@@ -10,8 +10,6 @@ This project analyzes fake and real job postings to identify hiring scam pattern
 - Power BI
 - Python
 - Pandas
-- Scikit-learn
-- NLTK
 - GitHub
 
 ## Project Workflow
@@ -29,7 +27,7 @@ This project analyzes fake and real job postings to identify hiring scam pattern
 - Administrative and finance-related functions were more scam-prone.
 - “Data Entry”, “Payroll”, and “Work From Home” appeared frequently in fake postings.
 
-## Machine Learning
+## Machine Learning Future Reference
 A Logistic Regression model was trained using TF-IDF features extracted from job title and requirements text.
 
 ## Project Files
@@ -37,7 +35,7 @@ A Logistic Regression model was trained using TF-IDF features extracted from job
 - `Excel_Dashboard/` - Excel analysis and dashboard
 - `SQL/` - SQL queries and views
 - `PowerBI/` - Power BI dashboard
-- `Python_ML_Model/` - notebook and trained model files
+- `Python/` - notebook and trained model files
 
 ## Author
 Ibrahim Khan
