@@ -16,13 +16,19 @@ st.set_page_config(
 # --------------------------------------------------
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-model = joblib.load(
-    os.path.join(BASE_DIR, "Python_ML_Model", "fake_job_model.pkl")
-)
+@st.cache_resource
+def load_artifacts():
+    model = joblib.load(
+        os.path.join(BASE_DIR, "Python_ML_Model", "fake_job_model.pkl")
+    )
 
-vectorizer = joblib.load(
-    os.path.join(BASE_DIR, "Python_ML_Model", "tfidf_vectorizer.pkl")
-)
+    vectorizer = joblib.load(
+        os.path.join(BASE_DIR, "Python_ML_Model", "tfidf_vectorizer.pkl")
+    )
+
+    return model, vectorizer
+
+model, vectorizer = load_artifacts()
 
 # --------------------------------------------------
 # CUSTOM CSS
